@@ -5,9 +5,18 @@ import { AnchorElement } from '../../utils';
 //components
 import { GroupButton } from "./Button"
 //Icons
-import { IconLock, IconMail, IconArrowLeft ,IconNoCopyright } from "@tabler/icons";
+import { IconLock, IconMail, IconArrowLeft, IconNoCopyright } from "@tabler/icons";
 
 export function Demo() {
+    const inputStyles={
+        backgroundColor:"white",
+        color: "#00c0fa",
+        borderRadius:"5px",
+        width:"30px",
+        heigth:"32px",
+        margin:"5px"
+    }
+
     return (
         <><Flex h={"100%"} direction={"column"} justify="space-between" >
             <Center my={"auto"} >
@@ -20,19 +29,19 @@ export function Demo() {
                         <TextInput
                             style={{ backgroundColor: "#f2f2f2", borderRadius: "10px", marginTop: "10px" }}
                             variant="unstyled"
-                            icon={<IconMail size={16} />}
+                            icon={<IconMail size={20} style={inputStyles} />}
                             placeholder="you@example.com" />
                         <PasswordInput
                             style={{ backgroundColor: "#f2f2f2", borderRadius: "10px", marginTop: "10px" }}
                             radius="md"
                             variant="unstyled"
-                            icon={<IconLock size={16} />}
+                            icon={<IconLock size={20} style={inputStyles} />}
                             placeholder="At least 8 characters" />
                     </div>
                     <AnchorElement description={"Forgot Password?"} fw={"bold"} />
                     <Divider my="xs" label="Or" labelPosition="center" />
                     <Button
-                        style={{width: "100%"}}
+                        style={{ width: "100%" }}
                         variant="gradient"
                         gradient={{ from: 'teal', to: 'blue', deg: 60 }}
                     >
