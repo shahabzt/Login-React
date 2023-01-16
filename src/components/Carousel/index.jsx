@@ -1,6 +1,6 @@
 //mantine components
 import { Carousel } from "@mantine/carousel"
-import { Flex, Text, Image, Grid } from "@mantine/core"
+import { Flex, Text, Image, Grid, ColorInput } from "@mantine/core"
 //components
 import { CarouselSlide } from "./components/CarouselSlide"
 //Icons
@@ -26,7 +26,14 @@ export function Left() {
                 <Carousel
                     sx={{ width: "80%" }}
                     mx="auto"
-                    withIndicators
+                    styles={{
+                        indicator: {
+                          backgroundColor: "#919191",
+                          width: 15,
+                          height: 6,
+                        },
+                      }}
+                      withIndicators
                     dragFree
                     slideGap="md"
                     align="end"

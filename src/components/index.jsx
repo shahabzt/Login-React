@@ -10,7 +10,7 @@ export function FinoticLogin() {
 
         <Grid h={"100vh"} style={{width:"100%"}}>
             <Grid.Col span={5} style={{ backgroundColor: "#ffffff" }}>
-                    <Left />
+                    <Left  />
             </Grid.Col>
             <Grid.Col span={7} >
                     <Demo />
