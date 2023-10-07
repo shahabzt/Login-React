@@ -1,4 +1,4 @@
-import { Anchor, filterProps } from "@mantine/core"
+import { Anchor } from "@mantine/core"
 
 
 export function AnchorElement(props){

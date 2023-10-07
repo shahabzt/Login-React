@@ -5,7 +5,7 @@ import { AnchorElement } from '../../utils';
 //components
 import { GroupButton } from "./Button"
 //Icons
-import { IconLock, IconMail, IconArrowLeft, IconNoCopyright } from "@tabler/icons";
+import { IconLock, IconMail, IconNoCopyright } from "@tabler/icons";
 
 export function Demo() {
     const inputStyles={
@@ -39,14 +39,14 @@ export function Demo() {
                             placeholder="At least 8 characters" />
                     </div>
                     <AnchorElement description={"Forgot Password?"} fw={"bold"} />
-                    <Divider my="xs" label="Or" labelPosition="center" />
                     <Button
-                        style={{ width: "100%" }}
+                        style={{ width: "100%", marginBottom:"30px"}}
                         variant="gradient"
                         gradient={{ from: 'teal', to: 'blue', deg: 60 }}
                     >
                         Login
                     </Button>
+                    <Divider my="xs" label="Or" labelPosition="center" />
                     <GroupButton />
                     <Text mb={"md"} c="dimmed">
                         Don't you have an account? <AnchorElement description={"Sign Up"} fw={"bold"} />
